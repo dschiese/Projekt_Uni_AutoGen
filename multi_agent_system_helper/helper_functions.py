@@ -2,7 +2,7 @@ import os
 import requests
 import subprocess
 
-ROOT_REPOSITORY_DIRECTORY = "/home/dennisschiese/Projekte/Master/2. Semester/Automated Software Engineering/Projekt/repositories"
+ROOT_REPOSITORY_DIRECTORY = "REPLACE_WITH_ABS_REPO_PATH"
 LITE_ENDPOINT = "http://localhost:8081/task/index/"
 
 def fetch_problem_statement(index:int):

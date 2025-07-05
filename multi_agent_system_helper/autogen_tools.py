@@ -3,7 +3,7 @@
 import os
 import json
 from .helper_functions import send_test, resolve_file_path
-BASE_PATH = "/home/dennisschiese/Projekte/Master/2. Semester/Automated Software Engineering/Projekt/results"
+BASE_PATH = "PATH_TO_RESULTS"
 
 def read_file_tool(path:str):
     """

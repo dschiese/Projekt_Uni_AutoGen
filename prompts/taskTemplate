@@ -1,0 +1,26 @@
+Given an erroneous GitHub repository, you as a team should fix the problem in the code, described in the following problem statement:
+
+<START PROBLEM STATEMENT>
+{Problem_statement}
+<END PROBLEM STATEMENT>
+
+Further repository Data:
+Patch: = {patch}
+instance_id = {instance_id}
+FAIL_TO_PASS = {FAIL_TO_PASS}
+PASS_TO_PASS = {PASS_TO_PASS}
+repoDir = {path_to_repository}
+
+To do so, you will follow the following steps:
+1. The planning agent will read the problem statement and create a plan to fix the problem.
+2. The reading agent will read the affected file and provide the content to the coding agent.
+3. The coding agent will fix the code and return the complete source code with the fix included.
+4. The implementation agent will apply the changes made by the coding agent to the codebase by writing the code to the file.
+5. The testing agent will test the changes written to the code by the provided tool.
+6. The verification agent will verify the changes made by the coding agent and the implementation agent by checking the test results and the code.
+
+Additionall information:
+1. The test of the changes will be done by the testing agent, however, you must and should not change any test files or create any as the testing
+is done with an external API called by the testing agent. 
+Additionally, you cannot rely on debugging statements or logging to find the error.
+You can solely read files and suggest fixes and implement them.
